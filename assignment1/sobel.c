@@ -15,6 +15,12 @@ int main(int argc,char** argv)
     FILE *mag_outfile, *low_outfile, *high_outfile, *fp1, *fopen();
     char *foobar;
 
+    if (argc != 7)
+    {
+        printf("Usage: binary infile magnitude_outfile low_outfile high_outfile low_threshold high_threshold");
+        return 1;
+    }
+
     argc--; argv++;
     foobar = *argv;
     fp1=fopen(foobar,"rb");
