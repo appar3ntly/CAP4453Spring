@@ -1,0 +1,1 @@
+Use value of 40 for low threshold, 110 for high to make images look like the sobeloutput
